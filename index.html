@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Mes de Pago</title>
+    <style>
+        h1 { color: yellowgreen}
+        .bienvenido{
+            width: 400px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px;
+            padding: 5px;
+            background: green;
+            color: brown;
+        }
+        .ventana{
+            width: 30%;
+            border-radius: 10px;
+            background:  red;
+            color: black;
+            border-radius: 0px 10px 0px 10px;
+            /* box-shadow:x y desenfoque extesion colo*/
+            box-shadow: 0px 0px 20px 15px brown;
+        }
+    </style>
+</head>
+<center>
+<body>
+   
+    <div class="container">
+        <h2>Seleccione el Mes de Pago</h2>
+        
+            Mes de pago: <input type="text" list="meses" size="10" name="mes">
+            <datalist id="meses">
+                <option value="enero">Enero</option>
+                <option value="febrero">Febrero</option>
+                <option value="marzo">Marzo</option>
+                <option value="abril">Abril</option>
+                <option value="mayo">Mayo</option>
+                <option value="junio">Junio</option>
+                <option value="julio">Julio</option>
+                <option value="agosto">Agosto</option>
+                <option value="septiembre">Septiembre</option>
+                <option value="octubre">Octubre</option>
+                <option value="noviembre">Noviembre</option>
+                <option value="diciembre">Diciembre</option>
+            </datalist>
+            <p> Ejemplo de Acordeón en HTML</p>
+              <details class="bienvenido">
+                    <h1>Bienvenidos</h1><br>
+                   <p> Hola Bienvenidos a todos</p>
+            </details><br>
+            <button popovertarget="ventana">Mensaje</button>
+            <div class="ventana" popover id="ventana"><center><h1>POPOVER</h1><br>Tengas ustedes muy buenas tardes</center></div>
+            
+        
+    </div>
+</body>
+</center>
+</html>
+
